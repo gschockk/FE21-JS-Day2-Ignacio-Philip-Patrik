@@ -107,7 +107,7 @@
 // Bankomat
 
 var x;
-
+//
 var amount_100;
 var amount_50;
 var amount_20;
@@ -134,9 +134,10 @@ var total_stored_10 = banknote_10 * stored_10;
 
 
 check_money100 = (x) => {
-  if (x >= stored_100) {
-    calc100 = x / stored_100;
-    x = x - (stored_100 * 100);
+  if (x >= total_stored_100) {
+    amount_100 = x / total_stored_100;
+    x = x - total_stored_100;
+    x = Math.floor(min_to_hours)
   }
 
 }
