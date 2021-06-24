@@ -1,7 +1,7 @@
 // BASIC EXERCISE #1 - Crystal Gazer
 // function crystalGazer(job_title, location, partners_name, number_childrens) {
 //   return `You will be a ${job_title} in ${location} and married to ${partners_name} with ${number_childrens}.`;
-// }
+// };
 
 // document.write(crystalGazer("Web Developer", "Vienna", "Carina", 1));
 
@@ -9,7 +9,7 @@
 // BASIC EXERCISE #2 - Age Calculator
 // function ageCalculator(birth_year, current_year) {
 //   return `You are either ${current_year - birth_year} or ${current_year - birth_year - 1}`;
-// }
+// };
 
 // document.write(ageCalculator(1992,2021));
 
@@ -19,7 +19,7 @@
 //   let todays_date = new Date();
 //   let current_year = todays_date.getFullYear();
 //   return `You are either ${current_year - birth_year} or ${current_year - birth_year - 1}`;
-// }
+// };
 
 // document.write(ageCalculator(1992));
 
@@ -30,7 +30,7 @@
 //   //let radians = (degrees * (Math.PI / 180.0)).toFixed(6);
 //   //let radians = (degrees * (Math.PI / 180.0));
 //   return `<strong>${degrees}</strong> degrees are <strong>${radians}</strong> radians`;
-// }
+// };
 
 // document.write(DegreesToRadians(90));
 
@@ -40,7 +40,7 @@ function CalcAreaVolume(width, height, depth) {
   let area = width*height;
   let volume = area * depth;
   return `The area of the box is: <strong>${area}</strong> <br> The volume of the box is:  <strong>${volume}</strong>`;
-}
+};
 
 document.write(CalcAreaVolume(7,2,5));
 
