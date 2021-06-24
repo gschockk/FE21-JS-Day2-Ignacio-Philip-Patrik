@@ -6,11 +6,15 @@ function TimeConvert(time_in_minutes) {
   //   time_in_minutes = 0; // time_in_minutes * (-1);
   // }
   let hours = parseInt(time_in_minutes / 60);
-  minutes = time_in_minutes - (hours*60);
-  return `${time_in_minutes} minutes =  <strong>${hours} </strong>hour(s) and <strong>${minutes} </strong>minute(s)`;
+  let minutes = time_in_minutes - (hours*60);
+  //return `${time_in_minutes} minutes =  <strong>${hours} </strong>hour(s) and <strong>${minutes} </strong>minute(s)`;
+  return [hours, minutes]
 };
 
-document.write(TimeConvert(200));
+var amount = 200;
+var hours = TimeConvert(amount)[0];
+var minutes = TimeConvert(amount)[1];
+document.write(`${amount} minutes =  <strong>${hours} </strong>hour(s) and <strong>${minutes} </strong>minute(s)`);
 
 
 
