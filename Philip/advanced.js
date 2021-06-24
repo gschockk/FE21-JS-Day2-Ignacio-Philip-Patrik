@@ -12,8 +12,9 @@ function TimeConvert(time_in_minutes) {
 };
 
 var amount = 200;
-var hours = TimeConvert(amount)[0];
-var minutes = TimeConvert(amount)[1];
+var times = TimeConvert(200);
+var hours = times[0];
+var minutes = times[1];
 document.write(`${amount} minutes =  <strong>${hours} </strong>hour(s) and <strong>${minutes} </strong>minute(s)`);
 
 
