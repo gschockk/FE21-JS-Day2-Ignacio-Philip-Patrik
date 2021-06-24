@@ -8,12 +8,17 @@
 
 // Intermediate - Average Grade
 function CalcGrades(math, physics, english) {
-  sum = Number(math) + Number(physics) + Number(english);
-  avg = sum / 3;
-  return `Sum: <strong>${sum}</strong> <br> Average: <strong>${avg}</strong>`;
+  let sum = Number(math) + Number(physics) + Number(english);
+  let avg = sum / 3;
+  return [sum, avg];
 };
 
-document.write(CalcGrades(3,"4",5));
+var grades = CalcGrades(3,"4",5);
+var sum = grades[0];
+var avg = grades[1]; 
+
+document.write(`Sum: <strong>${sum}</strong> <br> Average: <strong>${avg}</strong>`);
+
 
 
 
